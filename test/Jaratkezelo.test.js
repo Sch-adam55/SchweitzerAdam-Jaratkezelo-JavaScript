@@ -2,7 +2,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { JaratKezelo, NegativKesesException } from '../src/JaratKezelo.js';
 
-describe ('JaratKezelo', () => {
+describe('JaratKezelo', () => {
     let jaratKezelo;
 
     beforeEach(() => {

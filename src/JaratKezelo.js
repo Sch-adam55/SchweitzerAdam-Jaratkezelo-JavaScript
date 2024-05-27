@@ -29,7 +29,7 @@ class JaratKezelo {
         const jarat = this.jaratok.get(jaratSzam);
         jarat.keses += keses;
         if (jarat.keses < 0) {
-            jarat.keses -= keses;  
+            jarat.keses -= keses;  // Undo the addition
             throw new NegativKesesException("A késés nem lehet negatív");
         }
     }
@@ -39,7 +39,7 @@ class JaratKezelo {
             throw new Error("Nem létező járat");
         }
         const jarat = this.jaratok.get(jaratSzam);
-        const indulas = new Date(jarat.indulas.getTime() + jarat.keses * 60000); 
+        const indulas = new Date(jarat.indulas.getTime() + jarat.keses * 60000); // keses percekben van
         return indulas;
     }
 
@@ -54,4 +54,4 @@ class JaratKezelo {
     }
 }
 
-exports = { JaratKezelo, NegativKesesException };
+export { JaratKezelo, NegativKesesException };

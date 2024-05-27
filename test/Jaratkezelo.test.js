@@ -1,8 +1,8 @@
 
-const { describe, it, expect } = require('vitest');
-const { JaratKezelo, NegativKesesException } = require('../src/JaratKezelo');
+import { describe, it, expect, beforeEach } from 'vitest';
+import { JaratKezelo, NegativKesesException } from '../src/JaratKezelo.js';
 
-describe('JaratKezelo', () => {
+describe ('JaratKezelo', () => {
     let jaratKezelo;
 
     beforeEach(() => {

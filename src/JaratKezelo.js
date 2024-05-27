@@ -54,4 +54,4 @@ class JaratKezelo {
     }
 }
 
-module.exports = { JaratKezelo, NegativKesesException };
+exports = { JaratKezelo, NegativKesesException };

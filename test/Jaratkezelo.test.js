@@ -1,3 +1,4 @@
+
 const { describe, it, expect } = require('vitest');
 const { JaratKezelo, NegativKesesException } = require('../src/JaratKezelo');
 
